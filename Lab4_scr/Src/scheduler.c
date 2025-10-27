@@ -103,9 +103,6 @@ void SCH_Dispatch_Tasks(void) {
 			HAL_UART_Transmit(&huart2, (uint8_t *)data, sprintf(data, "Task %d is done at %d, Runme = %d\r\n", Index, time_stamp, SCH_tasks_G[Index].RunMe), 1000);
 		}
 	}
-	// Report system status
-	//SCH_Report_Status();
-	// The scheduler enters idle mode at this point
-	//SCH_Go_To_Sleep();
 }
+
 
